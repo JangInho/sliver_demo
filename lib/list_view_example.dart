@@ -17,7 +17,7 @@ class _ListViewExampleState extends State<ListViewExample> {
         title: const Text('ListView Ex'),
       ),
       body: ListView.builder(
-          itemCount: 20,
+          itemCount: 10000,
           itemBuilder: (context, index) {
             print('🐽item $index');
             return ItemExample(index: index);

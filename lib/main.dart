@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:sliver_demo/list_view_example.dart';
 import 'package:sliver_demo/single_child_scroll_view_example.dart';
 
+import 'sliver_example.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -74,6 +76,12 @@ class _SliverDemoState extends State<SliverDemo> {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => const ListViewExample()));
               },
               child: const Text('ListView.Builder'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => const SliverExample()));
+              },
+              child: const Text('Sliver'),
             ),
           ],
         ),
